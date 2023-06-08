@@ -41,6 +41,12 @@ Chat with your documents offline using AI. No data leaves your system. Internet 
 
 ## Installation
 
+### Prequisites
+
+**Windows**
+
+- Ensure that you have [Microsoft Visual C++ Build](https://visualstudio.microsoft.com/visual-cpp-build-tools/) Tools installed.
+
 Install the tool using:
 
 ```sh
@@ -57,6 +63,15 @@ Now it can be run offline without internet connection.
 
 ## Usage
 
+**Windows** 
+- If you are planning to use on `.docx` files, ensure [LibreOffice](https://www.libreoffice.org/download/download-libreoffice/) is installed as well. 
+  - If Python is installed for all users, then default directory is `C:\Program Files\Python310\Lib\site-packages\unstructured\partition\common.py`
+  - Else it is `C:\Users\yourName\AppData\Local\Programs\Pyhont\Python310\Lib\site-packages\unstructured\partition\common.py`
+  - In the file under the function `convert_office_doc()`, change the `soffice` to wherever your soffice.exe file from your LibreOffice install is.
+  - Default file path for LibreOffice is `C:\Program Files\LibreOffice\program\soffice.exe` 
+Credit to this [issue #597](https://github.com/imartinez/privateGPT/issues/597) from privateGPT 
+
+
 Add a directory containing documents to chat with using:
 
 ```sh
@@ -64,6 +79,7 @@ chatdocs add /path/to/documents
 ```
 
 > The processed documents will be stored in `db` directory by default.
+> Ensure there are no duplicate documents, even if they are in different file formats. 
 
 Chat with your documents using:
 
