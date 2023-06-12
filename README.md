@@ -79,7 +79,7 @@ chatdocs add /path/to/documents
 ```
 
 > The processed documents will be stored in `db` directory by default.
-> Ensure there are no duplicate documents, even if they are in different file formats. 
+> Ensure there are no duplicate documents, even if they are in different file formats.
 
 Chat with your documents using:
 
