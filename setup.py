@@ -7,7 +7,7 @@ name = "chatdocs"
 
 setup(
     name=name,
-    version="0.2.2",
+    version="0.2.4",
     description="Chat with your documents offline using AI.",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -45,7 +45,7 @@ setup(
     ],
     extras_require={
         "gptq": [
-            "auto-gptq>=0.2.1,<0.3.0",
+            "auto-gptq>=0.2.2,<0.3.0",
         ],
         "tests": [
             "pytest",

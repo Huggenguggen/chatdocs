@@ -126,6 +126,7 @@ To change the C Transformers GGML model, add and change the following in your `c
 ```yml
 ctransformers:
   model: TheBloke/Wizard-Vicuna-7B-Uncensored-GGML
+  model_file: Wizard-Vicuna-7B-Uncensored.ggmlv3.q4_0.bin
   model_type: llama
 ```
 
@@ -161,7 +162,7 @@ huggingface:
 To use GPTQ models, install the `auto-gptq` package using:
 
 ```sh
-pip install git+https://github.com/PanQiWei/AutoGPTQ@v0.2.1
+pip install chatdocs[gptq]
 ```
 
 and add the following to your `chatdocs.yml`:
@@ -260,7 +261,7 @@ After installing PyTorch with CUDA enabled, you should also reinstall the `auto-
 
 ```sh
 pip uninstall auto-gptq --yes
-pip install git+https://github.com/PanQiWei/AutoGPTQ@v0.2.1
+pip install chatdocs[gptq]
 ```
 
 ## License
